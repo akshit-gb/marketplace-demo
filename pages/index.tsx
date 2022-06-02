@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
   // Connect your marketplace smart contract here (replace this address)
   const marketplace = useMarketplace(
-    "0x277C0FB19FeD09c785448B8d3a80a78e7A9B8952" // Your marketplace contract address here
+    "0x9DC0Bb25aEF953d0aE90A0B14cC3C41a12a3492d" // Your marketplace contract address here
   );
 
   const { data: listings, isLoading: loadingListings } =
@@ -47,6 +47,14 @@ const Home: NextPage = () => {
           <Link href="/create">
             <a className={styles.mainButton} style={{ textDecoration: "none" }}>
               Create A Listing
+            </a>
+          </Link>
+        </div>
+
+        <div style={{ marginTop: 32, marginBottom: 32 }}>
+          <Link href="/mint">
+            <a className={styles.mainButton} style={{ textDecoration: "none" }}>
+              Mint a NFT
             </a>
           </Link>
         </div>
